@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hipaa-policies',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'HIPAA Policies and Procedures for Clinical Meteor Apps.  ',
 
@@ -16,11 +16,13 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
 
   api.use('meteor-platform');
+  api.use('less');
   api.use('perak:markdown@1.0.5');
 
   api.addFiles('lib/hipaa.js');
   api.addFiles('lib/client-helpers.js', 'client');
 
+  api.addFiles('hipaa-policies.less');
 
   api.addFiles('policyTemplates/3rd_party_policy.html');
   api.addFiles('policyTemplates/approved_tools_policy.html');
@@ -38,7 +40,7 @@ Package.onUse(function(api) {
   api.addFiles('policyTemplates/hipaa_inheritance_for_paas_customers.html');
   api.addFiles('policyTemplates/hipaa_inheritance_for_platform_addon_customers.html');
   api.addFiles('policyTemplates/hipaa_mapping_to_business_controls.html');
-  api.addFiles('policyTemplates/ids_policy.html');
+  api.addFiles('policyTemplates/intrusion_detection_policy.html');
   api.addFiles('policyTemplates/incident_response_policy.html');
   api.addFiles('policyTemplates/key_definitions.html');
   api.addFiles('policyTemplates/policy_management_policy.html');
@@ -63,7 +65,7 @@ Package.onUse(function(api) {
   api.export('hipaaInheritanceForPaasCustomers');
   api.export('hipaaInheritanceForPlatformAddOnCustomers');
   api.export('hipaaMappingToBusinessControls');
-  api.export('idsPolicy');
+  api.export('intrusionDetectionPolicy');
   api.export('incidentResponsePolicy');
   api.export('keyDefinitions');
   api.export('policyManagementPolicy');

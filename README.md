@@ -13,8 +13,6 @@ HIPAA Policies and Procedures for Clinical Meteor Apps.
 #### Policy Index
 
 * [Introduction](policies/introduction.md)
-* [HIPAA Inheritance for PaaS Customers](policies/hipaa_inheritance_for_paas_customers.md)
-* [HIPAA Inheritance for Platform Add-on Customers](policies/hipaa_inheritance_for_platform_addon_customers.md)
 * [Policy Management Policy](policies/policy_management_policy.md)
 * [Risk Management Policy](policies/risk_management_policy.md)
 * [Roles Policy](policies/roles_policy.md)
@@ -27,7 +25,7 @@ HIPAA Policies and Procedures for Clinical Meteor Apps.
 * [Breach Policy](policies/breach_policy.md)
 * [Disaster Recover Policy](policies/disaster_recovery_policy.md)
 * [Disposable Media Policy](policies/disposable_media_policy.md)
-* [IDS Policy](policies/ids_policy.md)
+* [Intrusion Detection Policy](policies/ids_policy.md)
 * [Vulnerability Scanning Policy](policies/vulnerability_scanning_policy.md)
 * [Data Integrity Policy](policies/data_integrity_policy.md)
 * [Data Retention Policy](policies/data_retention_policy.md)
@@ -36,7 +34,6 @@ HIPAA Policies and Procedures for Clinical Meteor Apps.
 * [3rd Party Policy](policies/policyTemplates/3rd_party_policy.md)
 * [Key Definitions](policies/key_definitions.md)
 * [HIPAA Business Associate Agreement (“BAA”)](policies/hipaa_business_associate_agreement.md)
-* [HIPAA Mappingsto Business Controls](policies/hipaa_mapping_to_controls.md)
 
 
 ==================================
@@ -56,9 +53,6 @@ HIPAA Policies and Procedures for Clinical Meteor Apps.
 {{> employeesPolicy}}
 {{> facilityAccessPolicy}}
 {{> hipaaBusinessAssociateAgreement}}
-{{> hipaaInheritanceForPaasCustomers}}
-{{> hipaaInheritanceForPlatformAddOnCustomers}}
-{{> hipaaMappingToBusinessControls}}
 {{> idsPolicy}}
 {{> incidentResponsePolicy}}
 {{> keyDefinitions}}
@@ -75,7 +69,7 @@ Of course, any of these templates can be included in a route using Iron Router o
 ==================================
 #### Contributing  
 
-We'll happily accept any pull-requests if policy-oriented folks want to go through and clean these up.  
+We'll happily accept any pull-requests if policy-oriented folks want to go through and clean these up.
 
 
 ==================================

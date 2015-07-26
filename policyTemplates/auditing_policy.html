@@ -1,10 +1,8 @@
 <template name="auditingPolicy">
-	<div id="auditingPolicy">
-
+	<div id="auditingPolicy" class="page hipaaPolicyDocument">
 		{{#markdown}}
 
-## Auditing Policy
--------------------------
+### Auditing Policy
 
 {{companyName}} shall audit access and activity of electronic protected health information (ePHI) applications and systems in order to ensure compliance. The Security Rule requires healthcare organizations to implement reasonable hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI. Audit activities may be limited by application, system, and/or network auditing capabilities and resources. {{companyName}} shall make reasonable and good-faith efforts to safeguard information privacy and security through a well-thought-out approach to auditing that is consistent with available resources.
 
@@ -19,7 +17,9 @@ It is the policy of {{companyName}} to safeguard the confidentiality, integrity,
 This policy applies to all {{companyName}} Add-on systems, including BaaS, that store, transmit, or process ePHI. This policy, and associated procedures, do not apply to PaaS Customers that do not choose {{companyName}} Logging Service.
 
 -------------------------
-#### Applicable Standards from the HITRUST Common Security Framework
+#### Applicable Standards
+
+##### HITRUST Common Security Framework
 
 * 0.a Information Security Management Program
 * 01.a Access Control Policy
@@ -30,8 +30,7 @@ This policy applies to all {{companyName}} Add-on systems, including BaaS, that 
 * 09.ab - Monitoring System Use
 * 06.e - Prevention of Misuse of Information
 
--------------------------
-#### Applicable Standards from the HIPAA Security Rule
+##### HIPAA Security Rule
 
 * 45 CFR ¬ß 164.308(a)(1)(ii)(D) - Information System Activity Review
 * 45 CFR ¬ß 164.308(a)(5)(ii)(B) & (C) - Protection from Malicious Software & Log-in Monitoring
@@ -155,6 +154,5 @@ This policy applies to all {{companyName}} Add-on systems, including BaaS, that 
 * Random audits.
 
 		{{/markdown}}
-
 	</div>
 </template>
