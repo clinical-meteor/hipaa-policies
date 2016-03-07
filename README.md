@@ -74,3 +74,5 @@ We'll happily accept any pull-requests if policy-oriented folks want to go throu
 
 ==================================
 #### Licensing  
+
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
