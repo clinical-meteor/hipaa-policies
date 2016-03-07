@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hipaa-policies',
-  version: '0.1.0',
+  version: '0.1.1',
   // Brief, one-line summary of the package.
   summary: 'HIPAA Policies and Procedures for Clinical Meteor Apps.  ',
 
@@ -79,5 +79,4 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('clinical:hipaa-policies');
-  api.addFiles('hipaa-policies-tests.js');
 });

@@ -1,10 +1,10 @@
 <template name="configurationManagementPolicy">
-  <div id="configurationManagementPolicy" class="page hipaaPolicyDocument">
+  <div id="configurationManagementPolicy" class="page hipaaPolicyDocument" style="{{getPageHeight}}">
     {{#markdown}}
 
 ### Configuration Management Policy
 
-{{companyName}} standardizes and automates configuration management through the use of Salt scripts as well as documentation of all changes to production systems and networks. Salt automatically configures all {{companyName}} systems according to established and tested policies, and is used as part of our Disaster Recovery plan and process.
+{{companyName}} standardizes and automates configuration management through the use of {{getConfigManagementSoftware}} scripts as well as documentation of all changes to production systems and networks. {{getConfigManagementSoftware}} automatically configures all {{companyName}} systems according to established and tested policies, and is used as part of our Disaster Recovery plan and process.
 
 --------------------------
 #### Applicable Standards
@@ -20,7 +20,7 @@
 -------------------------
 #### Configuration Management
 
-1. Salt is used to standardize and automate configuration management.
+1. {{getConfigManagementSoftware}} is used to standardize and automate configuration management.
 2. OSSEC is used to scan systems every 2 hours and on reboot. These scans capture file system changes and also unauthorized or malicious software.
 3. No systems are deployed into {{companyName}} environments without approval of the {{companyName}} CTO.
 4. All changes to production systems, network devices, and firewalls are approved by the {{companyName}} CTO before they are implemented. Additionally, all changes are tested before they are implemented in production.

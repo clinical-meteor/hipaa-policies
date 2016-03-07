@@ -1,5 +1,5 @@
 <template name="breachPolicy">
-	<div id="breachPolicy" class="page hipaaPolicyDocument">
+	<div id="breachPolicy" class="page hipaaPolicyDocument" style="{{getPageHeight}}">
 		{{#markdown}}
 
 ### Breach Policy
@@ -8,7 +8,7 @@ To provide guidance for breach notification when impressive or unauthorized acce
 
 The Federal Trade Commission (FTC) has published breach notification rules for vendors of personal health records as required by ARRA/HITECH. The FTC rule applies to entities not covered by HIPAA, primarily vendors of personal health records. The rule is effective September 24, 2009 with full compliance required by February 22, 2010.
 
-The American Recovery and Reinvestment Act of 2009 (ARRA) was signed into law on February 17, 2009. Title XIII of ARRA is the Health Information Technology for Economic and Clinical Health Act (HITECH). HITECH significantly impacts the Health Insurance Portability and Accountability (HIPAA) Privacy and Security Rules.  While HIPAA did not require notification when patient protected health information (PHI) was inappropriately disclosed, covered entities and business associates may have chosen to include notification as part of the mitigation process. HITECH does require notification of certain breaches of unsecured PHI to the following: individuals, Department of Health and Human Services (HHS), and the media. The effective implementation for this provision is September 23, 2009 (pending publication HHS regulations).
+The American Recovery and Reinvestment Act of 2009 (ARRA) was signed into law on February 17, 2009. Title XIII of ARRA is the Health Information Technology for Economic and Clinical Health Act (HITECH). HITECH significantly impacts the Health Insurance Portability and Accountability (HIPAA) Privacy and Security Rules.  While HIPAA did not require notification when patient protected health information (PHI) was inappropriately disclosed, covered entities and business associates may have chosen to include notification as part of the mitigation process. HITECH does require notification of certain breaches of unsecured PHI to the following: individuals, Department of Health and Human Services (HHS), and the media.
 
 In the case of a breach, {{companyName}} shall notify all affected Customers. It is the responsibility of the Customers to notify affected individuals.
 
@@ -100,10 +100,9 @@ We will assist you in remedying the situation.
 Sincerely,
 
 
-Travis Good, MD
-Co-founder - {{companyName}}, Inc
-travis@{{companyName}}.io
-303-351-2640
+{{getPrivacyOfficer}}
+Privacy Officer
+{{companyName}}
 
 
 		{{/markdown}}
